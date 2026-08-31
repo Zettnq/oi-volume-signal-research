@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/ venv/ env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large, not in git — check data/README.md)
+data/raw/
+data/processed/
+*.parquet
+*.csv
+!data/**/*.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
