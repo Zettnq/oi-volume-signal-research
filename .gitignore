@@ -8,8 +8,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data (large, not in git — check data/README.md)
-data/raw/
-data/processed/
 *.parquet
 *.csv
 !data/**/*.gitkeep
