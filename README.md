@@ -19,9 +19,6 @@ concentrated on *terminal* signals.
 - The correct object for future work is
 **episode-termination prediction**, not the raw signal.
 
-Read narrative version of this research: 
-(RU) Substack: 
-(ENG) Medium:
 ---
 
 ## 1. The pattern

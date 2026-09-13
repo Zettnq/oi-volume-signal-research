@@ -1,7 +1,7 @@
 # Data
 
-The repository is **schema-driven**: it does not depend on a specific symbol,
-exchange or period. Bring your own dataset that matches the schema below.
+The repository is **schema-driven**: it does not depend on a specific symbol 
+or exchange. Bring your own dataset that matches the schema below.
 
 ## Required schema (highier timeframe)
 
@@ -15,16 +15,14 @@ exchange or period. Bring your own dataset that matches the schema below.
 | return                | f8    | close-to-close return                    |
 | delta_oi              | f8    | change of open interest                  |
 
-Lower timeframe used to break down price movement within a higher-timeframe bar. Lower timeframe dataset needs the same OHLCV + `volume_delta` (no OI required).
+Lower timeframe used to break down price movement within a higher-timeframe bar. Lower timeframe dataset needs the same OHLCV + `volume_delta` (without OI).
 
 ## How the author built the data
 
-- Candles: Bybit V5 REST (perpetual), 1m, aggregated to 1h/5m (via `ccxt`).
-  (see the author's script here: )
-- `volume_delta`: Bulk Volume Classification on 1m trades/candles, aggregated to 1h/5m
-  (see the author's BVC repository: ).
+- `volume_delta` and OHLCV: Bulk Volume Classification on 1m trades/candles, aggregated to 1h/5m
+  (see the author's BVC repository: https://github.com/Zettnq/Volume-Delta).
 - `open_interest` / `delta_oi`: exchange OI series, diffed per bar.
-  (see the authors's Open Interest fetcher script: )
+  (see the authors's Open Interest fetcher script: https://github.com/Zettnq/Bybit-Open-Interest-Fetcher)
 
 ## Build your own
 
