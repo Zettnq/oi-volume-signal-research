@@ -167,9 +167,8 @@ continuation starts, netting to zero. Hence the correct object for future work i
 
 ```bash
 git clone https://github.com/Zettnq/oi-volume-signal-research && cd oi-volume-signal-research
-conda create -n oivdcr python=3.13 && conda activate oivdcr
+pip install -r requirements.txt
 pip install -e .            # installs the oivdc_research package
-# pip install -r requirements.txt
 ```
 
 Requires `pandas ≥ 2`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `pyarrow`.
@@ -178,11 +177,11 @@ Requires `pandas ≥ 2`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `pyarrow
 
 ## 8. Data
 
-The repository is **schema-driven**: it does not depend on a specific symbol, exchange
-or period. Bring your own dataset matching the schema in
+The repository is **schema-driven**: it does not depend on a specific symbol or exchange.
+Bring your own dataset matching the schema in
 [`data/README.md`](data/README.md), then validate it in notebook 01.
 
-If critical checks pass, notebooks 01–09 run unchanged. Raw/processed data are
+If critical checks pass, notebooks 02–09 run unchanged. Raw/processed data are
 git-ignored; only the schema, the validator and the build guide ship with the repo.
 
 ---
@@ -200,8 +199,8 @@ git-ignored; only the schema, the validator and the build guide ship with the re
 
 ## 10. Connect
 
-(RU) Telegram: https://t.me/iceninetrading
-(RU) Substack: https://zettnq.substack.com 
+- (RU) Telegram: https://t.me/icenineresearch
+- (RU) Substack: https://substack.com/@icenineresearch 
 
 ## 11. License & disclaimer
 
